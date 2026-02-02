@@ -7,3 +7,11 @@
 
     
 }
+li{
+    width:300px;
+    background-color: tan;
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+
+}

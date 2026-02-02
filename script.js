@@ -130,30 +130,76 @@
 
 // }, 2000); // homework time
 
-function finishHomework(callback) {
-console.log("Starting homework ... ");
-setTimeout(() => {
-console. log("Homework done!");
-callback();
-}, 2000);
-}
+// function finishHomework(callback) {
+// console.log("Starting homework ... ");
+// setTimeout(() => {
+// console. log("Homework done!");
+// callback();
+// }, 2000);
+// }
 
-function eatDinner(callback) {
-console. log("Starting dinner ... ");
-setTimeout(() =>{
-console. log("Dinner done!");
-callback();
-}, 1500);
-}
-function goToPlayground( ) {
-console. log("let's go to playground!");
-}
-// Chained in steps, but cleaner
-finishHomework(() => {
-eatDinner(() => {
-goToPlayground( );
+// function eatDinner(callback) {
+// console. log("Starting dinner ... ");
+// setTimeout(() =>{
+// console. log("Dinner done!");
+// callback();
+// }, 1500);
+// }
+// function goToPlayground( ) {
+// console. log("let's go to playground!");
+// }
+// // Chained in steps, but cleaner
+// finishHomework(() => {
+// eatDinner(() => {
+// goToPlayground( );
 
-});
-});
+// });
+// });
 
+
+// const input=document.querySelector("#task")
+// const btn=document.querySelector(".btn")
+
+
+// const input=document.querySelector("#task")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
+
+// btn.addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     const li=document.createElement('li')
+//     li.innerText=input.value
+//     list.appendChild(li)
+//     input.value=""
+// })
   
+// btn.addEventListener('click',(e)=>{
+//   e.preventDefault()
+//   const 11=document.createElement('li')
+//   const 
+// }
+// )
+
+const input=document.querySelector("#task")
+const btn=document.querySelector(".btn")
+const lists=document.querySelector(".list")
+
+btn.addEventListener("click",(e)=>{
+    e.preventDefault()
+    if(input.value===""){
+      alert("enter task")
+      return
+    }
+    const li=document.createElement("li")
+    const deleteButton=document.createElement("button")
+    deleteButton.innerText="Delete"
+    li.innerText=input.value
+    
+    lists.appendChild(deleteButton)
+    lists.appendChild(li)
+
+    deleteButton.addEventListener("click",()=>{
+        lists.removeChild(li)
+    })
+    input.value=""
+})

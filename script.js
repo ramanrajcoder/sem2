@@ -82,16 +82,78 @@
 //},10*1000)
 
 
-let count = 1;
+//let count = 1;
 
-const interval = setInterval(() => {
-    console.log(count);
+//const interval = setInterval(() => {
+  //  console.log(count);
 
-    if (count === 10) {
-        clearInterval(interval); // stop printing
-    }
+    //if (count === 10) {
+      //  clearInterval(interval); // stop printing
+    //}
 
-    count++;
-}, 1000);
+   // count++;
+//}, 1000);
+
+
+// function print(){
+//   console.log("HELLO TEACHERS")
+// }
+
+// function greet(num){
+//   console.log("welcome to our class")
+//   setTimeout(()=>{
+//     console.log("INSIDE SET TIMEOUT")
+//     let firstname="alexa"
+//     num(firstname)
+//   },2000);
+  
+// }
+//  greet(print)
+
+
+
+// console. log("Starting homework ... ");
+
+// setTimeout(( ) => {
+// console.log("Homework done!");
+// console.log("Starting dinner ... ");
+
+// setTimeout ( ( ) => {
+// console.log( "Dinner done!");
+// consolole.log("Getting ready to go out ... ");
+
+// setTimeout(() =>{
+// console.log( "Going to the playground!" );
+// }, 1000); // after Winner
+
+// }, 1500); // dinner tme
+
+// }, 2000); // homework time
+
+function finishHomework(callback) {
+console.log("Starting homework ... ");
+setTimeout(() => {
+console. log("Homework done!");
+callback();
+}, 2000);
+}
+
+function eatDinner(callback) {
+console. log("Starting dinner ... ");
+setTimeout(() =>{
+console. log("Dinner done!");
+callback();
+}, 1500);
+}
+function goToPlayground( ) {
+console. log("let's go to playground!");
+}
+// Chained in steps, but cleaner
+finishHomework(() => {
+eatDinner(() => {
+goToPlayground( );
+
+});
+});
 
   

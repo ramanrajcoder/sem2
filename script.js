@@ -180,26 +180,80 @@
 // }
 // )
 
-const input=document.querySelector("#task")
-const btn=document.querySelector(".btn")
-const lists=document.querySelector(".list")
+// const input=document.querySelector("#task")
+// const btn=document.querySelector(".btn")
+// const lists=document.querySelector(".list")
 
-btn.addEventListener("click",(e)=>{
-    e.preventDefault()
-    if(input.value===""){
-      alert("enter task")
-      return
-    }
-    const li=document.createElement("li")
-    const deleteButton=document.createElement("button")
-    deleteButton.innerText="Delete"
-    li.innerText=input.value
+// btn.addEventListener("click",(e)=>{
+//     e.preventDefault()
+//     if(input.value===""){
+//       alert("enter task")
+//       return
+//     }
+//     const li=document.createElement("li")
+//     const deleteButton=document.createElement("button")
+//     deleteButton.innerText="Delete"
+//     li.innerText=input.value
     
-    lists.appendChild(deleteButton)
-    lists.appendChild(li)
+//     lists.appendChild(deleteButton)
+//     lists.appendChild(li)
 
-    deleteButton.addEventListener("click",()=>{
-        lists.removeChild(li)
-    })
-    input.value=""
+//     deleteButton.addEventListener("click",()=>{
+//         lists.removeChild(li)
+//     })
+//     input.value=""
+// })
+
+
+
+
+// console.log("first line")
+// setTimeout(()=>{
+//   console.log("inside timeout")
+// },0)
+// const p=new Promise((resolve,reject)=>{
+//   resolve()
+// })
+
+// p.then(()=>{
+//   console.log("inside promise")
+// }).catch(()=>{
+//   console.log("inside catch")
+// })
+// const p2=new Promise((resolve,reject)=>{
+//   resolve()
+// })
+// p2.then(()=>{
+//    console.log("inside promise")
+// }).catch(()=>{
+//   console.log("inside catch")
+// })
+// const p2=new Promise((resolve,reject)=>{
+//   resolve()
+
+
+// }).catch(()=>{
+
+// })
+
+// constp3=new Promise((resolve,reject)=>{
+//   resolve()
+// })
+
+// p3.then(()=>{
+//   console.log("inside promise")
+// })
+
+
+
+const form=document.querySelector("#form")
+form.addEventListener('submit',(e)=>{
+  e.preventDefault()
+  console.log(eventTitle.value)
+  console.log(eventDate.value)
+  console.log(category.value)
+  console.log(RTCSessionDescription.value)
 })
+
+
+

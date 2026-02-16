@@ -246,14 +246,114 @@
 
 
 
-const form=document.querySelector("#form")
-form.addEventListener('submit',(e)=>{
-  e.preventDefault()
-  console.log(eventTitle.value)
-  console.log(eventDate.value)
-  console.log(category.value)
-  console.log(RTCSessionDescription.value)
-})
+//const form=document.querySelector("#form")
+//form.addEventListener('submit',(e)=>{
+  //e.preventDefault()
+  //console.log(eventTitle.value)
+  //console.log(eventDate.value)
+  //console.log(category.value)
+  //console.log(RTCSessionDescription.value)
+//})
+
+
+
+
+
+// function orderFood(){
+//   return new Promise{function(resolve,reject){
+//     setTimeout(()=>{
+//       console.log("Food ordered")
+//       resolve("food ordered")
+//     },1000)
+//   }}
+
+  
+// }
+
+
+
+// function prepareFood(){
+//   return new Promise{function(resolve,reject){
+//     setTimeout(()=>{
+//       console.log("Food prepared")
+//       resolve("food prepared")
+//     },1000)
+//   }
+
+//   }
+// }
+
+
+// function deliverFood(){
+//   return new Promise{function(resolve,reject){
+//     setTimeout(()=>{
+//       console.log("Food delivered")
+//       resolve("food delivered")
+//     },1000)
+//   }
+
+//   }
+// }
+
+// orderFood().then((data)=>{
+//   console.log(data)
+//   return prepareFood()
+// }).then((data)=>{
+//   console.log(data)
+//   return deliverFood()
+// })then((data)=>{
+//   console.log(data)
+// })catch((err)=>{
+//   console.log(err)
+// })
+
+
+
+// function deliverFood(){
+//   return new Promise(function(resolve,reject){
+
+//   })
+// }
+
+
+// async function order(){
+//   const data=wait orderFood()
+//   console.log(data)
+//   await prepareFood()
+//   await deliverFood()
+// }
+  
+// order()
+
+
+// console.log("first line")
+// try{
+//   // let sample=324
+//   console.log(sample)
+// }catch(error){
+//   console.log(error)
+// }finally{
+//   console.log("finally block")
+// }
+// console.log("last line")
+// )
+// console.log(sample)
+// console.log("last line")
+
+
+console.log("first line")
+try{
+  //let sample=324
+  //console.log(Sample)
+  let age=19
+  if (age<19){
+    //error
+    throw new Error("Access Denied")
+  }
+}
+
+
+
 
 
 

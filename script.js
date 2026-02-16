@@ -341,19 +341,39 @@
 // console.log("last line")
 
 
-console.log("first line")
-try{
-  //let sample=324
-  //console.log(Sample)
-  let age=19
-  if (age<19){
-    //error
-    throw new Error("Access Denied")
+// console.log("first line")
+// try{
+//   //let sample=324
+//   //console.log(Sample)
+//   let age=19
+//   if (age<19){
+//     //error
+//     throw new Error("Access Denied")
+//   }
+// }
+
+// async function getData(){
+//   const response=await fetch("https://jsonplaceholder.typicode.com/posts")
+//   const data=await response.json()
+//   data.products.forEach((ele)=>{
+//     console.log(ele.id)
+//   })
+// }
+// getData()
+
+
+async function getData(){
+  try{
+    const respose=await fetch("https://dummyjson.com/products")
+    console.log(Response.ok)
+    if(Response.ok==false)throw new Error("data  not found")
+      const data=await Response.json()
+    console.log(data)
+  }catch(error){
+    console.log("data not found")
   }
 }
 
-
-
-
+getData()
 
 

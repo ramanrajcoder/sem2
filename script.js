@@ -362,18 +362,57 @@
 // getData()
 
 
-async function getData(){
-  try{
-    const respose=await fetch("https://dummyjson.com/products")
-    console.log(Response.ok)
-    if(Response.ok==false)throw new Error("data  not found")
-      const data=await Response.json()
-    console.log(data)
-  }catch(error){
-    console.log("data not found")
+// async function getData(){
+//   try{
+//     const respose=await fetch("https://dummyjson.com/products")
+//     console.log(Response.ok)
+//     if(Response.ok==false)throw new Error("data  not found")
+//       const data=await Response.json()
+//     console.log(data)
+//   }catch(error){
+//     console.log("data not found")
+//   }
+// }
+
+// getData()
+
+
+
+function* generate(){
+  yield 1
+  yield 2
+  yield 3
+
+  for (let index = 1; index<4; index++){
+    yield index
+  }
+  let i=1;
+  while(true){
+    yield ii++
   }
 }
+const gen=generate()
 
-getData()
+console.log(gen)
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
 
+function add(a,b,c){
+  return a+b+c
+}
+console.log(add(1,2,3))
+
+function add(a){
+  return function(b){
+    return function(c){
+      return a+b+c
+    }
+  }
+}
+//console.log(add(1)(2)(3))
+const first=add(1)
+const second=first(2)
+const third=second(3)
+console.log(third)
 

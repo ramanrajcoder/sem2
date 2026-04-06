@@ -378,41 +378,63 @@
 
 
 
-function* generate(){
-  yield 1
-  yield 2
-  yield 3
+// function* generate(){
+//   yield 1
+//   yield 2
+//   yield 3
 
-  for (let index = 1; index<4; index++){
-    yield index
-  }
-  let i=1;
-  while(true){
-    yield ii++
-  }
-}
-const gen=generate()
+//   for (let index = 1; index<4; index++){
+//     yield index
+//   }
+//   let i=1;
+//   while(true){
+//     yield ii++
+//   }
+// }
+// const gen=generate()
 
-console.log(gen)
-console.log(gen.next())
-console.log(gen.next())
-console.log(gen.next())
+// console.log(gen)
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
 
-function add(a,b,c){
-  return a+b+c
-}
-console.log(add(1,2,3))
+// function add(a,b,c){
+//   return a+b+c
+// }
+// console.log(add(1,2,3))
 
-function add(a){
-  return function(b){
-    return function(c){
-      return a+b+c
-    }
-  }
-}
-//console.log(add(1)(2)(3))
-const first=add(1)
-const second=first(2)
-const third=second(3)
-console.log(third)
+// function add(a){
+//   return function(b){
+//     return function(c){
+//       return a+b+c
+//     }
+//   }
+// }
+// //console.log(add(1)(2)(3))
+// const first=add(1)
+// const second=first(2)
+// const third=second(3)
+// console.log(third)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//30-03-2026

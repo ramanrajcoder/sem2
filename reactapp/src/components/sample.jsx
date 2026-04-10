@@ -1,4 +1,6 @@
 import React,{Component, useState} from 'react'
+import style from '../css/sample.module.css'
+import style1 from '../css/Homepage.module.css'
 
 function Sample(props) {
     const [name,setName]=useState("Devendra")

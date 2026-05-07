@@ -35,3 +35,6 @@ function Contact() {
 }
 
 export default Contact
+
+
+// we need to learn react with in few days just i don't know how
